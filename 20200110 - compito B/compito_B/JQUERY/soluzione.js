@@ -12,7 +12,9 @@ $(document).ready(function(){
             (in questo caso 0 non viene usato perchè è la riga dell'input) e tramite .eq si può andare a ripescare
             l'elemento desiderato tramite indice */
         
-            selectedRow.find("div").css("background-color", "orange");
+            //selectedRow.find("div").css("background-color", "orange");
+            $(".col-12 button").next("div").append("<input type='number'></input>")
+            /*anche next() può filtrare il successivo elemento di un determinato tipo, come "div" appunto */
         } else {
             alert("riga inesistente");
         }       
