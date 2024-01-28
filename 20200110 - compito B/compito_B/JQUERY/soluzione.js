@@ -16,13 +16,23 @@ $(document).ready(function(){
             let columns = selectedRow.find("[class^='col-']");
             let colNumber = columns.length;
             
-            alert(colNumber)
-
             let newRow = $("<div class='row'></div>");
             for (let i = 0; i<colNumber; i++){
                 let col = $("<div class='col'><input type='number' value='" + 1 + "' class='form-control'></div>");
                 newRow.append(col)
             }
+
+            let modificaRiga = $("<button>Modifica Riga</button>")
+            newRow.append(modificaRiga)
+
+            modificaRiga.click(function(){
+                let valuesArray = new Array()
+                newRow.find("input[type='number']").each(function () {
+                    valuesArray.push($(this).val());
+                });
+
+                alert(valuesArray[1])
+            })
 
             $(".col-12 button").next("div").append(newRow)
             /*anche next() può filtrare il successivo elemento di un determinato tipo, come "div" appunto */
