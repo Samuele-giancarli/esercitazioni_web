@@ -1,0 +1,92 @@
+/*per informazioni generali come la font family si fa ricorso
+al body*/
+
+body {
+    font-family: Arial;
+    font-size: 100%;
+}
+
+/*il box di h1 è l'header perciò:*/
+
+header {
+    /*
+    1) il valore di border è lo spessore
+    2) dashed è tratteggiato
+    3) colore del bordo
+    */
+    border: 2px dashed blue;
+    border-radius: 25px;
+
+    width: 94%;
+    
+    /*se con altri comandi non si centra
+    basterà mettere margin: auto*/
+    margin: 0 auto;
+    padding: auto;
+}
+
+h1 {
+    font-weight: bold; 
+    text-align: center;
+    color: blue;
+}
+
+/*fare attenzione alla differenza tra font e text.
+genericamente è sempre text*/
+
+nav {
+    width: 92%; /*"occupa il 92% a quanto pare intende width"*/
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin: auto;
+}
+
+nav ul{
+    list-style-type: none; /*elimina i punti della lista*/
+    /*dopo aver usato inline block non serve nemmeno più*/
+    width: 100%;
+}
+
+nav ul li { /*solid è la linea continua*/
+    display: inline-block;
+    /*in alternativa si può usare inline table per mettere vicini gli elementi*/
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+    width: 230px;
+}
+
+nav ul li:hover{
+    background-color: lightgreen;
+    border-color: green;
+}
+
+nav ul li a {
+    color: black;
+    align-content: center;
+    text-decoration: none;
+}
+
+section{
+    text-align: left;
+}
+
+p {
+    color: black;
+}
+
+footer{
+    width: 98%;
+    border: 2px solid blue;
+    border-radius: 15px;
+
+    margin: auto;
+}
+
+footer p{
+    text-align: center;
+    color: black;
+}
