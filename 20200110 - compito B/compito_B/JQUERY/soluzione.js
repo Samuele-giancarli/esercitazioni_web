@@ -20,7 +20,8 @@ $(document).ready(function(){
 
             let newRow = $("<div class='row'></div>");
             for (let i = 0; i<colNumber; i++){
-                newRow.append("<input></input>");
+                let col = $("<div class='col'><input type='number' value='" + 1 + "' class='form-control'></div>");
+                newRow.append(col)
             }
 
             $(".col-12 button").next("div").append(newRow)
