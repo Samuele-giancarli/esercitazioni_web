@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>
+            Iscrizione Esame Tecnologie Web
+        </title>
+    </head>
+    <body>
+        <h1> Iscrizione Esame Tecnologie Web </h1>
+        <form method="post" id="iscrizioneForm"> <!-- ricordarsi il method post-->
+            <fieldset> <!-- i fieldset sono i divisori usati per dividere
+                            in diverse parti i moduli da compilare-->
+                <h2> Campi Anagrafici </h2>
+                <label>nome <input type="text" name="Nome"></label><br>
+                <label>cognome <input type="text" name="Cognome"></label><br>
+                <label>matricola <input type="text" name="Matricola"></label><br>
+                <label>mail <input type="text" name="Mail"></label><br>
+                <label>gruppo <input type="number" name="Gruppo" min="1" max="30"></label>
+            </fieldset>
+
+            <fieldset>
+                <h2> Esame </h2>
+                <label>data esame <input type="date" name="data" required></label><br> <!-- nelle scelte required obbliga a selezionare qualcosa-->
+            </label>
+                <label>
+                    tipo
+                    <select name="tipo" required>  <!-- nelle scelte required obbliga a selezionare qualcosa-->
+                        <option>scritto</option>
+                        <option>orale</option>
+                    </select> 
+                </label>
+            </section>
+            <br>
+            <button type="submit">Iscriviti</button>
+        </form>
+    </body>
+</html>
