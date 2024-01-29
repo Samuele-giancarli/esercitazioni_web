@@ -31,10 +31,18 @@ $(document).ready(function(){
                     valuesArray.push($(this).val());
                 });
 
-                alert(valuesArray[1])
+                let sum = 0;
+                valuesArray.forEach(el => {
+                    sum+= parseInt(el, 10) /*sarebbe più corretta metterla direttamente dentro al push
+                                            così  valuesArray.push(parseInt($(this).val(), 10));
+                                            però serve giusto come dimostrazione di conversione
+                                            da elemento array a numero*/
+                });
+
+                alert(sum)
             })
 
-            $(".col-12 button").next("div").append(newRow)
+            $(".col-12 button").next("div").empty().append(newRow)
             /*anche next() può filtrare il successivo elemento di un determinato tipo, come "div" appunto */
         } else {
             alert("riga inesistente");
