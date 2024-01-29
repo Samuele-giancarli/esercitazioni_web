@@ -39,7 +39,17 @@ $(document).ready(function(){
                                             da elemento array a numero*/
                 });
 
-                alert(sum)
+                if(sum==12){
+                    /*modificare la riga selezionata,
+                    modificando le grandezze delle colonne in base a quanto inserito dall’utente.  */
+                    let newRow = $("<div class='row'></div>");
+                    for (let i = 0; i < valuesArray.length; i++) {
+                        let colWidth = parseInt(valuesArray[i], 10)
+                        let col = $("<div class='col-"+colWidth+"'></div>")
+                        newRow.append(col)
+                    }
+                    $("container-fluid").append(newRow)
+                }
             })
 
             $(".col-12 button").next("div").empty().append(newRow)
