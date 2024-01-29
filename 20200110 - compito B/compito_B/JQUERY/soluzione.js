@@ -40,15 +40,17 @@ $(document).ready(function(){
                 });
 
                 if(sum==12){
+                    /*let columnsArray = Array.from(columns);*/
                     /*modificare la riga selezionata,
                     modificando le grandezze delle colonne in base a quanto inserito dall’utente.  */
-                    let newRow = $("<div class='row'></div>");
-                    for (let i = 0; i < valuesArray.length; i++) {
-                        let colWidth = parseInt(valuesArray[i], 10)
-                        let col = $("<div class='col-"+colWidth+"'></div>")
-                        newRow.append(col)
-                    }
-                    $("container-fluid").append(newRow)
+                    /*columns.forEach((column, i) => {
+                        let colWidth = parseInt(valuesArray[i], 10);
+                        $(column).removeClass().addClass("col-" + colWidth);
+                    });*/
+                    columns.each(function (i) {
+                        let colWidth = parseInt(valuesArray[i], 10);
+                        $(this).removeClass().addClass("col-" + colWidth);
+                    });
                 }
             })
 
