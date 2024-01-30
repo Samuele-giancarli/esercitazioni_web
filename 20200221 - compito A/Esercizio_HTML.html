@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Esercizio HTML</title>
+    </head>
+    <body>
+        <h1>Iscrizione</h1>
+
+        <form method="get" action="action.php">
+            <fieldset>
+                <legend>Informazioni Personali:</legend>
+                <Label>Nome:*</Label>
+                <input type="text" name="nome" placeholder="Nome" autocomplete="off" required>
+                <Label>Cognome:*</Label>
+                <input type="text" name="cognome" placeholder="Cognome" autocomplete="off" required>
+                <Label>Data di nascita:</Label>
+                <input type="date" name="cognome" min="1900-01-01">
+            </fieldset>
+            <fieldset>
+                <legend>Informazioni aggiuntive:</legend>
+                <label>Scegli un colore</label>
+                <input type="color" name="inputColore" value="#ff0000"> <br> <br>
+                <label>Oppure scegli dalla lista:</label> <br> <br>
+                <input type="radio" name="radioColore" value="#0000ff" checked="on">
+                <Label>Rosso</Label>
+                <input type="radio" name="radioColore" value="#0000ff">
+                <Label>Blu</Label>
+                <input type="radio" name="radioColore" value="#008000">
+                <Label>Verde</Label>
+                <input type="radio" name="radioColore" value="">
+                <Label>Altro</Label>
+                <!-- <select name="selectColore" id="">
+                    <option value="#ff0000">Rosso</option>
+                    <option value="#0000ff">Blu</option>
+                    <option value="#008000">Verde</option>
+                    <option value="">Altro</option>
+                </select> -->
+            </fieldset>
+            <button type="submit">Invia</button>
+        </form> 
+    </body>
+</html>
