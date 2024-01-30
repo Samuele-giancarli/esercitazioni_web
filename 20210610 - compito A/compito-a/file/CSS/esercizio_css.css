@@ -45,3 +45,22 @@ footer{
 
     box-shadow: 10px 10px 5px green;
 }
+
+@media only screen and (max-width:768px){
+    nav{
+        width: 100%;
+        display: none;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
