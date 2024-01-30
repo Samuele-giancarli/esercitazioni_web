@@ -1,19 +1,26 @@
+h1{
+    text-decoration:overline underline;
+    width: 40%;
+    text-align: center;
+}
+
 fieldset{
     border: dashed blue;
+
+    display: inline-block;
+    width: 45%;
 }
 
-form{
-}
-
-fieldset{
-    
+fieldset.aggiuntive {
+    float: left;
 }
 
 button{
+    width: 40%;
+
     color: white;
     background-color: blue;
     rotate: -10deg;
-    width: 100%;
     border-radius: 5px;
     padding: 15px;
     border: none;
