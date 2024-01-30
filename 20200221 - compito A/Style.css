@@ -26,8 +26,8 @@ fieldset.aggiuntive {
     height: 25px;
 }
 
-button{
-    width: 40%;
+button{    
+    width: 45%;
 
     color: white;
     background-color: blue;
@@ -35,6 +35,8 @@ button{
     border-radius: 5px;
     padding: 15px;
     border: none;
+
+    margin-top: 60px;
 }
 
 .colorchoose{
