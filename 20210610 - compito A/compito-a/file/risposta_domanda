@@ -1,0 +1,20 @@
+
+Descrivere brevemente le metodologie di codifica dei caratteri nelle pagine Web:
+
+UTF-8:
+
+un formato di codifica dei caratteri Unicode
+assegna un numero di byte a ciascun carattere
+rappresenta una vasta gamma di simboli e lingue
+
+Universale: Supporta un vasto insieme di caratteri, inclusi quelli di molte lingue diverse.
+Compatibilità: Può rappresentare sia caratteri ASCII che caratteri non ASCII.
+
+ISO-8859-1:
+
+codifica a singolo byte
+rappresenta i primi 256 caratteri Unicode
+compresi quelli dell'alfabeto latino e alcuni simboli speciali.
+
+Retrocompatibilità: Compatibile con il set di caratteri ASCII.
+Semplicità: Una codifica più semplice rispetto a UTF-8.
