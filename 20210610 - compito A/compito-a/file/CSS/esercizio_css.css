@@ -21,4 +21,7 @@ header{
     border: 2px solid black;
 
     /*questa è l'obreggiatura:*/
+    /*il primo numero è la larghezza
+    il secondo è l'altezza (genericamente da tenere uguali)*/
+    box-shadow: 5px 5px green;
 }
