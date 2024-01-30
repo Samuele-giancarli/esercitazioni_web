@@ -8,7 +8,7 @@
         <h1>Iscrizione</h1>
 
         <form method="get" action="action.php">
-            <fieldset class="informazioni" name="informazioni">
+            <fieldset class="informazioni" name="Informazioni">
                 <legend>Informazioni Personali:</legend>
                 <Label>Nome:*</Label>
                 <input type="text" name="nome" placeholder="Nome" autocomplete="off" required>
@@ -22,14 +22,11 @@
                 <label>Scegli un colore</label>
                 <input type="color" name="inputColore" value="#ff0000"> <br> <br>
                 <label>Oppure scegli dalla lista:</label> <br> <br>
-                <input type="radio" name="radioColore" value="#0000ff" checked="on">
-                <Label>Rosso</Label>
-                <input type="radio" name="radioColore" value="#0000ff">
-                <Label>Blu</Label>
-                <input type="radio" name="radioColore" value="#008000">
-                <Label>Verde</Label>
-                <input type="radio" name="radioColore" value="">
-                <Label>Altro</Label>
+
+                <Label class="colorchoose"> <input type="radio" name="radioColore" value="#0000ff" checked="on">Rosso</Label>
+                <Label class="colorchoose"> <input type="radio" name="radioColore" value="#0000ff">Blu</Label>
+                <Label class="colorchoose"> <input type="radio" name="radioColore" value="#008000">Verde</Label>
+                <Label class="colorchoose"> <input  type="radio" name="radioColore" value="">Altro</Label>
                 <!-- <select name="selectColore" id="">
                     <option value="#ff0000">Rosso</option>
                     <option value="#0000ff">Blu</option>
