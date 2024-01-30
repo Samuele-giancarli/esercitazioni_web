@@ -27,3 +27,21 @@ header{
     il secondo è l'altezza (genericamente da tenere uguali)*/
     box-shadow: 10px 10px 5px green;
 }
+
+section{
+    width: 70%;
+    color: black;
+    text-align: left;
+}
+
+footer{
+    width: 70%;
+    border: 2px solid darkgreen;
+    text-align: center;
+    color: darkgreen;
+    text-size-adjust: 2px;
+
+    font-size: small;
+
+    box-shadow: 10px 10px 5px green;
+}
