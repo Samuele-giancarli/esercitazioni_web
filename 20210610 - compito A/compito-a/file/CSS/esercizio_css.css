@@ -1,0 +1,24 @@
+nav{
+    width: 20%;
+    border: 2px solid darkgreen;
+
+    float: right; /*float per decidere dove posizionare il blocco*/
+}
+
+nav ul{
+    list-style-type: circle; /*da mettere nell'ul per decidere il puntino che elencherà i li*/
+    line-height: 2em; /*interlinea*/
+}
+
+nav ul a:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
+header{
+    width: 70%;
+    background-color: lightgreen;
+    border: 2px solid black;
+
+    /*questa è l'obreggiatura:*/
+}
