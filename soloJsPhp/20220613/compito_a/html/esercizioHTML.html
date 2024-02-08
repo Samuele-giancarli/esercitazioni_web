@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acquisto Libri di Testo</title>
+</head>
+<body>
+
+  <h1>Form Acquisto Libri di Testo</h1>
+
+  <form action="#" method="get">
+
+    <!-- Gruppo di campi per la selezione dei titoli -->
+    <fieldset>
+      <legend>Seleziona il Titolo</legend>
+      <label for="titolo">Titolo:</label>
+      <select id="titolo" name="titolo" required>
+        <option value="sistemi_operativi">Sistemi operativi. Concetti ed esempi, di Abraham Silberschatz et al.</option>
+        <option value="linguaggi_programmazione">Linguaggi di programmazione. Principi e paradigmi, di Maurizio Gabbrielli e Simone Martini</option>
+        <option value="moderni_sistemi_operativi">I moderni sistemi operativi, di Andrew Tanenbaum</option>
+        <option value="fondamenti_reticoli">Fondamenti di reti di calcolatori, di Andrew Tanenbaum</option>
+      </select>
+    </fieldset>
+
+    <!-- Gruppo di campi per il tipo di formato -->
+    <fieldset>
+      <legend>Seleziona il Formato</legend>
+      <label>
+        <input type="radio" name="formato" value="copertina_flessibile" required>
+        Copertina flessibile
+      </label><br>
+      <label>
+        <input type="radio" name="formato" value="copertina_rigida" required>
+        Copertina rigida
+      </label><br>
+      <label>
+        <input type="radio" name="formato" value="formato_elettronico" required>
+        Formato elettronico
+      </label>
+    </fieldset>
+
+        <!-- Gruppo di campi per la consegna -->
+        <fieldset>
+            <legend>Dati per la Consegna</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome" required><br>
+            <label for="via">Via:</label>
+            <input type="text" id="via" name="via" required><br>
+            <label for="numero_civico">Numero Civico:</label>
+            <input type="text" id="numero_civico" name="numero_civico" required><br>
+            <label for="citta">Città:</label>
+            <input type="text" id="citta" name="citta" required><br>
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" name="provincia" required><br>
+            <label for="cap">CAP:</label>
+            <input type="text" id="cap" name="cap" required><br>
+            <label>
+              Orario flessibile:
+              <input type="radio" name="orario" value="flessibile" required>
+            </label>
+          </fieldset>
+      
+          <!-- Campo per il pagamento alla consegna -->
+          <label>
+            Pagamento alla consegna:
+            <input type="checkbox" name="pagamento" value="alla_consegna" required>
+          </label><br>
+      
+          <!-- Pulsanti di Submit e Annulla -->
+          <button type="submit">Acquista</button>
+          <button type="reset">Annulla</button>
+      
+        </form>
+      
+      </body>
+      </html>
